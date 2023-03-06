@@ -3,22 +3,17 @@ from Civitas import *
 class Mahasiswa(Civitas):
     '''
     Kelas untuk menampung data2 Mahasiswa
-    terdiri dari Nama, Nim, Prodi, dan Fakultas
+    terdiri dari atribut2 Civitas dan juga
+    atribut tambahan 
     Masing2 dapat diset menggunakan setter
     Masing2 dapat diambil menggunakan getter
-    '''
-    def __init__(self, name, nik, gender, university, email):
-        super().__init__(name, nik, gender, university, email)
+    '''   
     
     def __init__(self, name, nim, gender, prodi, fakultas, nik, universitas, email):
-        self._name = name
+        super().__init__(name, nik, gender, universitas, email)
         self._nim = nim
-        self._gender = gender
         self._prodi = prodi
         self._fakultas = fakultas
-        self._nik = nik
-        self._university = universitas
-        self._email = email
     
     #Setter
     

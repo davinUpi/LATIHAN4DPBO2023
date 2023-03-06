@@ -1,6 +1,13 @@
 from Human import *
 
 class Civitas(Human):
+    '''
+    Kelas Civitas terdiri dari
+    atribut2 Human dan juga
+    univerity dan email.
+    Terdiri dari metode2
+    setter dan getter
+    '''
     
     def __init__(self, name, nik, gender, university, email):
         super().__init__(name, nik, gender)

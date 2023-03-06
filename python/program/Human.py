@@ -6,11 +6,18 @@ class GENDER(Enum):
     ATTACK_HELICOTER = 2
 
 class Human:
-    
+    '''
+    Kelas ini memilikia tribut nama, nik, dan gender.
+    Untuks aat ini, gender berupa string
+    '''
     def __init__(self, name, nik, gender):
         self._name = name
         self._nik = nik
         self._gender = gender
+
+    '''
+    Metode2 masih ebrupa setter dan getter
+    '''
 
     def setName(self, name):
         self._name = name

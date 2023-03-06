@@ -1,6 +1,13 @@
 from Civitas import *
 
 class Dosen(Civitas):
+    '''
+    Kelas dosen =, turuna Civitas
+    teridir dari atribut2 civitas
+    dan juga nip, fakultas, pen_terakhir,
+    skill, prodi yang berisi objek Prodi
+    Metode hanya berupa setter dan getter
+    '''
     
     def __init__(self, name, gender, nip, fakultas, pen_terakhir, skill, prodi, universitas, email, nik = ""):
         super().__init__(name, nik, gender, universitas, email)
@@ -9,8 +16,6 @@ class Dosen(Civitas):
         self._pen_terakhir = pen_terakhir
         self._skill = skill
         self._prodi = prodi
-        self._university = universitas
-        self._email = email
     
     def setNip(self, nip):
         self._nip = nip
